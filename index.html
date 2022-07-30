@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Template Literals</h2>
+
+<p>Template literals allows variables in strings:</p>
+
+<p id="X"></p>
+
+<p>Template literals are not supported in Internet Explorer.</p>
+
+<script>
+let A = "Templates Literals";
+let B = ["Template Literals", "JavaScript", "ES6"];
+
+let C = `<h2>${A}</h2><ul>`;
+
+for (const x of B) {
+  C += `<li>${x}</li>`;
+}
+
+C += `</ul>`;
+document.getElementById("X").innerHTML = C;
+</script>
+
+</body>
+</html>
